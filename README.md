@@ -114,9 +114,11 @@ window 浏览器里面的全局对象
 #### 常用加密方式:
 
 **md5**:
-	调用方式:hex_md5("abc")
+调用方式:hex_md5("abc")
+
 **sha1**:
-	调用方式:hex_sha1("abc") 
+调用方式:hex_sha1("abc") 
+
 **RSA**:
 1、p和q 是不相等的，足够大的两个质数。 p和q是保密的
 2、n = p*q n是公开的
@@ -124,10 +126,10 @@ window 浏览器里面的全局对象
 4、e 是和f(n)互质的质数
 5、计算参数d 
 6、经过上面5步计算得到公钥KU=(e,n) 私钥KR=(d,n)
-	RSA三步骤 :
-		1:初始化 n = new JSEncrypt;
-		2:设置公钥	n.setPublicKey(r);
-		3:进行加密	var e = n.encrypt($("#input1").val())
+RSA三步骤 :
+	1:初始化 n = new JSEncrypt;
+	2:设置公钥	n.setPublicKey(r);
+	3:进行加密	var e = n.encrypt($("#input1").val())
 
 ##### RSA加密三步骤示例代码:		
 
